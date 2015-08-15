@@ -1,0 +1,30 @@
+#######################################
+# Syntax Coloring
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+CircularBuffer	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+push_back	KEYWORD2
+push_front	KEYWORD2
+pop_back	KEYWORD2
+pop_front	KEYWORD2
+back	KEYWORD2
+front	KEYWORD2
+clear	KEYWORD2
+capacity	KEYWORD2
+size	KEYWORD2
+reserve	KEYWORD2
+empty	KEYWORD2
+full	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
