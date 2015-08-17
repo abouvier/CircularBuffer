@@ -1,5 +1,5 @@
 #######################################
-# Syntax Coloring
+# Syntax Coloring Map For CircularBuffer
 #######################################
 
 #######################################
@@ -24,6 +24,10 @@ size	KEYWORD2
 reserve	KEYWORD2
 empty	KEYWORD2
 full	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
 
 #######################################
 # Constants (LITERAL1)
