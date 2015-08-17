@@ -36,21 +36,35 @@ public:
 	CircularBuffer() : m_head(m_buffer), m_end(m_buffer + Size),
 		m_tail(m_end - 1), m_size(0) {}
 
-	template <size_type U>
-	CircularBuffer(const CircularBuffer<T, U> &that) : CircularBuffer()
+	CircularBuffer(const CircularBuffer<T, Size> &that) : CircularBuffer()
 	{
 		*this = that;
 	}
 
-	template <size_type U>
-	CircularBuffer &operator=(const CircularBuffer<T, U> &that)
+	template <typename U, size_type ThatSize>
+	CircularBuffer(const CircularBuffer<U, ThatSize> &that) : CircularBuffer()
 	{
-		//if (&that != this)
+		*this = that;
+	}
+
+	CircularBuffer &operator=(const CircularBuffer<T, Size> &that)
+	{
+		if (&that != this)
 		{
-			m_size = min(that.size(), capacity());
-			for (size_type i = that.size() - m_size; i < that.size(); i++)
-				push_back(that[i]);
+			clear();
+			while (size() < that.size())
+				push_back(that[size()]);
 		}
+		return *this;
+	}
+
+	template <typename U, size_type ThatSize>
+	CircularBuffer &operator=(const CircularBuffer<U, ThatSize> &that)
+	{
+		clear();
+		for (size_type i = that.size() - min(that.size(), capacity());
+			i < that.size(); i++)
+			push_back(that[i]);
 		return *this;
 	}
 
