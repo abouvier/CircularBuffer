@@ -34,7 +34,7 @@ private:
 
 public:
 	CircularBuffer() : m_head(m_buffer), m_end(m_buffer + Size),
-		m_tail(m_buffer + Size - 1), m_size(0) {}
+		m_tail(m_end - 1), m_size(0) {}
 
 	template <size_type U>
 	CircularBuffer(const CircularBuffer<T, U> &that) : CircularBuffer()
@@ -57,8 +57,7 @@ public:
 	reference operator[](size_type offset)
 	{
 		return const_cast<reference>(
-			const_cast<const CircularBuffer &>(*this)[offset]
-		);
+			const_cast<const CircularBuffer &>(*this)[offset]);
 	}
 
 	const_reference operator[](size_type offset) const
