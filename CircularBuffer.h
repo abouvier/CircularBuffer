@@ -137,11 +137,6 @@ public:
 		return m_size;
 	}
 
-	size_type reserve() const
-	{
-		return capacity() - size();
-	}
-
 	bool empty() const
 	{
 		return !size();
