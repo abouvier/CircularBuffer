@@ -6,14 +6,14 @@
 /*   By: abouvier <abouvier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/14 18:01:48 by abouvier          #+#    #+#             */
-/*   Updated: 2015/08/15 05:38:17 by abouvier         ###   ########.fr       */
+/*   Updated: 2015/08/18 07:17:03 by abouvier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CIRCULARBUFFER_H
 #define CIRCULARBUFFER_H
 
-#include "Arduino.h"
+#include <Arduino.h>
 
 template <typename T, size_t Size>
 class CircularBuffer

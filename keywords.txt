@@ -21,7 +21,6 @@ front	KEYWORD2
 clear	KEYWORD2
 capacity	KEYWORD2
 size	KEYWORD2
-reserve	KEYWORD2
 empty	KEYWORD2
 full	KEYWORD2
 
