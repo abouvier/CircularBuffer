@@ -18,7 +18,7 @@
 #ifndef CIRCULARBUFFER_H
 #define CIRCULARBUFFER_H
 
-#include <Arduino.h>
+#include <stddef.h>
 
 template <typename T, size_t Size>
 class CircularBuffer
