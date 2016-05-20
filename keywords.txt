@@ -6,7 +6,7 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-CircularBuffer	KEYWORD1
+CircularBuffer	KEYWORD1	CircularBuffer
 
 #######################################
 # Methods and Functions (KEYWORD2)
@@ -27,4 +27,3 @@ full	KEYWORD2
 #######################################
 # Constants (LITERAL1)
 #######################################
-
