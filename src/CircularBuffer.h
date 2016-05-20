@@ -76,7 +76,8 @@ public:
 	reference operator[](size_type offset)
 	{
 		return const_cast<reference>(
-			const_cast<const CircularBuffer &>(*this)[offset]);
+			const_cast<const CircularBuffer &>(*this)[offset]
+		);
 	}
 
 	const_reference operator[](size_type offset) const
