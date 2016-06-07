@@ -80,7 +80,9 @@ public:
 
 	const_reference operator[](size_type offset) const
 	{
-		return m_head[offset < m_end - m_head ? offset : offset - capacity()];
+		if (offset >= static_cast<size_type>(m_end - m_head))
+			offset -= capacity();
+		return m_head[offset];
 	}
 
 	void push_back(const_reference value)
