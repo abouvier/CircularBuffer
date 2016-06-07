@@ -36,8 +36,13 @@ private:
 	size_type m_size;
 
 public:
-	CircularBuffer() : m_head(m_buffer), m_end(m_buffer + Size),
-		m_tail(m_end - 1), m_size(0) {}
+	CircularBuffer() :
+		m_head(m_buffer),
+		m_end(m_buffer + Size),
+		m_tail(m_end - 1),
+		m_size(0)
+	{
+	}
 
 	CircularBuffer(const CircularBuffer<T, Size> &that) : CircularBuffer()
 	{
