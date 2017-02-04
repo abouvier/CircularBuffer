@@ -1,5 +1,5 @@
 // CircularBuffer.h - Circular buffer library for Arduino
-// Copyright 2015-2016 abouvier <abouvier@student.42.fr>
+// Copyright 2015-2016 Alexandre Bouvier <abouvier@student.42.fr>
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
